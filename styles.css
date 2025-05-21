@@ -2781,3 +2781,134 @@ html {
 .dates-grid .date-item:nth-child(2n) { transition-delay: 0.2s; }
 .dates-grid .date-item:nth-child(3n) { transition-delay: 0.3s; }
 .dates-grid .date-item:nth-child(4n) { transition-delay: 0.4s; }
+
+/* Publication Details Section */
+#publication {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1a252f 100%);
+}
+
+#publication h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#publication h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
+#publication .nitw-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2.5rem;
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#publication .nitw-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+#publication .nitw-box p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#publication .presentation-info {
+    background: rgba(52, 152, 219, 0.1);
+    border-left: 4px solid var(--accent-color);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+#publication .presentation-info i {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+#publication .presentation-info p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    #publication {
+        padding: 3rem 0;
+    }
+
+    #publication h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #publication .nitw-box {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
+
+    #publication .nitw-box p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    #publication .presentation-info {
+        padding: 1.2rem;
+        margin: 1.5rem 0;
+    }
+
+    #publication .presentation-info i {
+        font-size: 1.2rem;
+    }
+
+    #publication .presentation-info p {
+        font-size: 1rem;
+    }
+}
+
+.registration-table .gst-note {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .registration-table .gst-note {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+}
